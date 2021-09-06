@@ -37,6 +37,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   # Rails >= 3 pry initializer
   gem 'pry-rails'
+  # A Ruby gem to load environment variables from `.env`.
+  gem 'dotenv-rails'
 end
 
 group :development do

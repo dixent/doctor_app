@@ -1,0 +1,6 @@
+.doctor-form#doctor-form[style="display:none"]
+  = form.simple_fields_for :roleable do |f|
+    = f.label 'Select your location'
+    #doctor-location token== ENV['MAPBOX_ACCESS_TOKEN']
+    = f.input :lon, as: :hidden, input_html: { id: 'lon' }
+    = f.input :lat, as: :hidden, input_html: { id: 'lat' }
