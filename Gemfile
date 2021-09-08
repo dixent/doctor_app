@@ -25,6 +25,12 @@ gem 'slim-rails', '~> 3.3'
 gem 'simple_form', '~> 5.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+# Minimal authorization through OO design and pure Ruby classes
+gem 'pundit', '~> 2.1.1'
+# Makes http fun again!
+gem 'httparty', '~> 0.17.3'
+# A Ruby interface to Mapbox APIs.
+gem 'mapbox-sdk', '~> 2.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
