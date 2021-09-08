@@ -6,6 +6,7 @@ Test application for doctors and patients
 
 ```bash
 bundle # Install gems
+yarn install # Install front end libraries
 docker-compose up # Run docker container for Postgresql
-rails db:setup # Setup DB + run seed with basic users and transactions
+rails db:setup # Setup DB
 ```

@@ -4,12 +4,17 @@ import { RalixApp }  from 'ralix'
 
 // Controllers
 import UsersCtrl     from 'controllers/users'
+import DoctorsCtrl     from 'controllers/doctors'
+
+import * as Templates from 'templates'
 
 const App = new RalixApp({
   rails_ujs: Rails,
   routes: {
-    '/users':     UsersCtrl,
-  }
+    '/users': UsersCtrl,
+    '/doctors': DoctorsCtrl
+  },
+  templates: Templates
 })
 
 Rails.start()

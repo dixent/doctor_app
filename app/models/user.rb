@@ -6,4 +6,12 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   belongs_to :roleable, polymorphic: true
+
+  def doctor?
+    roleable_type == 'Doctor'
+  end
+
+  def patient?
+    roleable_type == 'Patient'
+  end
 end

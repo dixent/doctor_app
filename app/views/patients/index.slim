@@ -1,0 +1,18 @@
+.patients-list
+  h3
+    = Patient.human_attribute_name(:patients)
+  table.table
+    thead.table-dark
+      tr
+        th scope='col'
+          = Patient.human_attribute_name(:full_name)
+        th scope='col' width='80%'
+          = Patient.human_attribute_name(:images)
+    tbody
+      - @patients.each do
+        tr
+          td
+            = _1.full_name
+          td.images
+            - _1.images.each do |image|
+              = image_tag rails_storage_proxy_path(image)
